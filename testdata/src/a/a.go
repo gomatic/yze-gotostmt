@@ -24,3 +24,22 @@ func withContinue() {
 		continue
 	}
 }
+
+// withFallthrough uses fallthrough (a non-goto branch statement) and must NOT be flagged.
+func withFallthrough(n int) int {
+	switch n {
+	case 0:
+		fallthrough
+	case 1:
+		return 1
+	}
+	return 0
+}
+
+// withLabeledBreak uses a labeled break (a non-goto branch statement) and must NOT be flagged.
+func withLabeledBreak() {
+loop:
+	for {
+		break loop
+	}
+}

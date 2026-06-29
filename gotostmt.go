@@ -27,7 +27,7 @@ var Analyzer = &analysis.Analyzer{
 var Registration = goyze.Registration{
 	Name:       "gotostmt",
 	Categories: []goyze.Category{"patterns"},
-	URL:        "https://docs.gomatic.dev/yze/go/gotostmt",
+	URL:        "https://docs.gomatic.dev/yze/gotostmt",
 	Analyzer:   Analyzer,
 }
 
