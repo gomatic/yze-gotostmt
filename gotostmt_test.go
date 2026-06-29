@@ -3,9 +3,10 @@ package gotostmt_test
 import (
 	"testing"
 
-	gotostmt "github.com/gomatic/yze-go-gotostmt"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/tools/go/analysis/analysistest"
+
+	gotostmt "github.com/gomatic/yze-gotostmt"
 )
 
 func TestGotoStatementIsReported(t *testing.T) {
@@ -14,6 +15,6 @@ func TestGotoStatementIsReported(t *testing.T) {
 
 func TestRegistrationIsWellFormed(t *testing.T) {
 	assert.NoError(t, gotostmt.Registration.Validate())
-	assert.Equal(t, "yze/go/gotostmt", gotostmt.Registration.RuleID())
+	assert.Equal(t, "yze/gotostmt", gotostmt.Registration.RuleID())
 	assert.Same(t, gotostmt.Analyzer, gotostmt.Registration.Analyzer)
 }
