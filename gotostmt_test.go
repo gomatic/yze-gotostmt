@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/tools/go/analysis/analysistest"
 
-	gotostmt "github.com/gomatic/yze-gotostmt"
+	gotostmt "github.com/gomatic/yze-go-gotostmt"
 )
 
 func TestGotoStatementIsReported(t *testing.T) {

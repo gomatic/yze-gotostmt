@@ -1,4 +1,4 @@
-module github.com/gomatic/yze-gotostmt
+module github.com/gomatic/yze-go-gotostmt
 
 go 1.26.4
 

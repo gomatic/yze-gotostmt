@@ -1,11 +1,11 @@
-// Command yze-gotostmt runs the gotostmt analyzer as a standalone go/analysis
+// Command yze-go-gotostmt runs the gotostmt analyzer as a standalone go/analysis
 // checker (text and -json output, and usable as a `go vet -vettool`).
 package main
 
 import (
 	"golang.org/x/tools/go/analysis/singlechecker"
 
-	gotostmt "github.com/gomatic/yze-gotostmt"
+	gotostmt "github.com/gomatic/yze-go-gotostmt"
 )
 
 // run is the analysis entry point, indirected so the binary's wiring is testable
